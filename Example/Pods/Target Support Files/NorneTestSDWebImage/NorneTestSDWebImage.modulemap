@@ -1,0 +1,6 @@
+framework module NorneTestSDWebImage {
+  umbrella header "NorneTestSDWebImage-umbrella.h"
+
+  export *
+  module * { export * }
+}

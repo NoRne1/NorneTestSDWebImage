@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		250A596A8E4071B1226A625D /* Pods_NorneTestSDWebImage_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15200A590543CE5885B82398 /* Pods_NorneTestSDWebImage_Tests.framework */; };
 		342F9E4158BB79EEF240473B /* Pods_NorneTestSDWebImage_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B80CC4A92A001785F4336AB /* Pods_NorneTestSDWebImage_Example.framework */; };
+		4E4454B529A8701300E733DA /* ScopeFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4454B429A8701300E733DA /* ScopeFunc.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
@@ -30,6 +31,7 @@
 		023E1FF9DFCD43EE4B2583D2 /* Pods-NorneTestSDWebImage_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NorneTestSDWebImage_Tests.debug.xcconfig"; path = "Target Support Files/Pods-NorneTestSDWebImage_Tests/Pods-NorneTestSDWebImage_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		15200A590543CE5885B82398 /* Pods_NorneTestSDWebImage_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NorneTestSDWebImage_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		475559A35AD3039987FF0C2B /* NorneTestSDWebImage.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = NorneTestSDWebImage.podspec; path = ../NorneTestSDWebImage.podspec; sourceTree = "<group>"; };
+		4E4454B429A8701300E733DA /* ScopeFunc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScopeFunc.swift; sourceTree = "<group>"; };
 		5B80CC4A92A001785F4336AB /* Pods_NorneTestSDWebImage_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NorneTestSDWebImage_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* NorneTestSDWebImage_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NorneTestSDWebImage_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				4E4454B429A8701300E733DA /* ScopeFunc.swift */,
 			);
 			name = "Example for NorneTestSDWebImage";
 			path = NorneTestSDWebImage;
@@ -209,10 +212,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 9VPGQPDD36;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 9VPGQPDD36;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -287,11 +292,35 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-NorneTestSDWebImage_Example/Pods-NorneTestSDWebImage_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/LookinServer/LookinServer.framework",
+				"${BUILT_PRODUCTS_DIR}/NSObject+Rx/NSObject_Rx.framework",
 				"${BUILT_PRODUCTS_DIR}/NorneTestSDWebImage/NorneTestSDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxGesture/RxGesture.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwiftExt/RxSwiftExt.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LookinServer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSObject_Rx.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NorneTestSDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxGesture.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwiftExt.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -327,6 +356,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E4454B529A8701300E733DA /* ScopeFunc.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
@@ -466,7 +496,9 @@
 			baseConfigurationReference = B281FF6862DAA043E600F478 /* Pods-NorneTestSDWebImage_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9VPGQPDD36;
 				INFOPLIST_FILE = NorneTestSDWebImage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -481,7 +513,9 @@
 			baseConfigurationReference = E49CA3189B3A6D2AE0FBA8BE /* Pods-NorneTestSDWebImage_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9VPGQPDD36;
 				INFOPLIST_FILE = NorneTestSDWebImage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -495,6 +529,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 023E1FF9DFCD43EE4B2583D2 /* Pods-NorneTestSDWebImage_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 9VPGQPDD36;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -504,6 +539,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -517,11 +553,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E44C542BF11BB70C89F572A4 /* Pods-NorneTestSDWebImage_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 9VPGQPDD36;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
